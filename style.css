@@ -1,0 +1,425 @@
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+    
+}
+
+/* first section with nav style  */
+.nav-part{
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 120px;
+    margin-right:120px;
+}
+.name{
+    width: 50%;
+    
+}
+.name h3{
+    font-size: 24px;
+    color: brown;
+    font-weight: 900;
+}
+.nav-link{
+    width: 50%;
+}
+.nav-link a{
+    font-size: 17px;
+    text-decoration: none;
+    color:brown;
+    font-weight: bold;
+    padding-right: 34px;
+}
+.nav-icon{
+    font-size: 22px;
+    text-decoration: none;
+    color: #e61616;
+    font-weight: bold;
+    padding-right: 20px;   
+}
+.nav-link a:hover{
+    color: #2614e9;
+}
+
+
+/*---------------
+    section one 
+-----------------*/
+.header-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    margin-left: 120px;
+    margin-right:120px;
+    margin-top: 130px;
+
+}
+.camera-info{
+    width: 100%;
+}
+.camera-info-heding{
+    font-size: 50px;
+    margin-bottom: 16px;
+    color: rgb(201, 40, 40);
+    
+}
+.camera-info-p{
+    font-weight: 600;
+    font-size: 16px;
+    text-align: justify;
+    padding-bottom: 16px;
+
+}
+
+.link-button{
+    
+    text-decoration: none;
+    font-size: 16px;
+    background-color:#f33b3b ;
+    color: white;
+    padding: 6px 9px;
+    border-radius: 15px ;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.link-button:hover{
+    background-color: #1e0bec;
+}
+
+.far{
+    font-size: 16px;
+    margin-left: 10px;   
+    
+}
+.camera-img{
+    width: 50%;
+    margin-left:10px;
+    
+}
+
+.camera-img:hover img{
+    transform: scale(1) rotate(45deg) ;
+    transition: transform 5s;
+}
+
+/*section two */
+.latest-collection{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+
+.main-desing{
+    margin-left: 120px;
+    margin-right:120px;
+
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 50px;
+    margin-top: 0;
+}
+.product{
+    width: 300px;
+    height: 450px;      
+    border-radius: 7px;
+    box-shadow: 2px 4px 15px gray;
+}
+.product-pic img{
+    width: 280px;
+    padding:9px 9px 0px 9px;
+}
+.some-info{
+    padding: 9px;
+}
+.p-titel{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 28px;
+}
+.p-price{
+    font-size: 24px;
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.rating-star{
+     margin-top: 2px;
+     margin-bottom: 0px;
+}
+.rating-star .fas{
+    color: #FB8200; 
+}
+#gap{
+    color: gray;
+}
+.gray-info{
+    color: rgb(122, 116, 116);
+    font-weight: bold;
+    font-size: 18px;
+}
+#Click-for-More{
+    padding-top: 50px;
+    font-size: 20px;
+    width: 100%;
+    color: #f03636;
+    font-weight: bold;
+    text-align: right;
+}
+#Click-for-More p:hover {
+    color: #2210e9;
+}
+
+
+
+
+
+ /* information part */
+ .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    padding: 20px 100px;
+    margin-right:120px;
+    margin-top: 130px;
+}
+.container::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(50px);
+}
+.conrainer-box{
+    /* max-width: 950px; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(36, 34, 34, 0.19);
+}
+.left{
+    height: 100%;
+    background: url(./media/images/gadgets.jpg) no-repeat center;
+    background-size: cover;
+}
+.right{
+    padding: 25px 40px;
+}
+h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+h2::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #eb5f5f;
+}
+.field{
+        width: 100%;
+        padding: 0.5rem 1rem;
+        outline: none;
+        border: 2px solid rgba(0,0,0,0);
+        background-color: rgba(230,230,230,0.6);
+        font-size: 1.1rem;
+        margin-bottom: 22px;
+        transition: .5s;
+}
+.field:hover{ 
+    background-color: rgba(216, 212, 212, 0.904);
+}
+.field:focus{
+    background-color: rgba(255, 255, 255, 0.959);
+    border: 2px solid rgba(120, 231, 222, 0.47);
+}
+.area{
+    min-height: 150px;
+}
+.btn{
+
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #4615f7;
+    outline: none;
+    border: none;
+    transition: .5s;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #eb7177;
+}
+
+/* -- footer section style -- */
+footer{
+    margin-top: 100px;
+    padding:20px;
+    background-color: #cab2b2f8;
+}
+.footer-style{
+    text-align: center;
+}
+
+#footer-name{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 3px;
+}
+
+#copyright{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#rights{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.f-icon{
+    font-size: 20px;
+    padding: 5px;
+    color: #251aa7;   
+}
+
+
+
+/* ------------------------
+    media query style
+---------------------------*/
+@media only screen and (max-width:688px){
+    .nav-part{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        text-align: center;
+    } 
+    .nav-icon {
+        display: none;
+    }
+    .nav-link{
+        display: none;
+    }
+    .name{
+       
+        padding-top: 50px;
+    }
+    .header-section{
+            
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        width: 100%;
+    }
+    .conrainer-box{
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-right: 100px;
+
+    }
+    .left{ 
+        height: 200px;
+    }
+
+/* -----------------------------
+tab view responsive website start
+------------------------------ */
+@media only screen and (min-width: 688px) and (max-width:992px){
+
+        .nav-part{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            text-align: center;
+        } 
+        .nav-icon {
+            display: none;
+        }
+        .name{
+            display: none;
+            padding-top: 50px;
+        }
+
+        .header-section{
+
+            grid-template-columns: repeat(1, 1fr);
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        .camera-img{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .camera-info{
+            width: 70%;
+        }
+        .products{
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+        }
+        .conrainer-box{
+            margin: 0px;
+            width: 100%;
+        }
+        footer{
+            width: 100%;
+        }
+        .header-section{
+            grid-template-columns: repeat(1, 1fr);
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        .camera-img{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+    }
